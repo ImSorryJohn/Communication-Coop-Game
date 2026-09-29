@@ -27,15 +27,15 @@ public class CharacterController3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G) && isGrounded())
+        if ((Input.GetKeyDown(KeyCode.G) || Input.GetKeyDown(KeyCode.Keypad8)) && isGrounded())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpStrength);
         }
-        if (Input.GetKey(KeyCode.V))
+        if (Input.GetKey(KeyCode.V) || Input.GetKey(KeyCode.Keypad4))
         {
             transform.position += transform.right * -movementSpeed * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.N))
+        if (Input.GetKey(KeyCode.N) || Input.GetKey(KeyCode.Keypad6))
         {
             transform.position += transform.right * movementSpeed * Time.deltaTime;
         }
