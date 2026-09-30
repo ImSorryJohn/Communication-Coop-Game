@@ -20,7 +20,7 @@ public class ExitDoor : MonoBehaviour
     private void FixedUpdate()
     {
         //Debug.Log("Fixed Update Running");
-        if (count == 1)
+        if (count == 4)
         {
             //Debug.Log("door should appear");
             RevealDoor();

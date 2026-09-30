@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class CharacterController2 : MonoBehaviour
 {
-    private float jumpStrength = 5f;
-    private float movementSpeed = 5f;
+    private float jumpStrength = 7.5f;
+    private float movementSpeed = 8f;
 
     private Vector2 movement = Vector2.zero;
     
