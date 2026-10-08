@@ -21,6 +21,7 @@ public class EndLevel : MonoBehaviour
         if (endedCount == 4)
         {
             Debug.Log("Congrats");
+            enteredTrigger.Invoke();
         }
     }
 }
